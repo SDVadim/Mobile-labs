@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="11f-UZ-VHo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Медиа-->
+        <scene sceneID="ZD6-7T-X5h">
+            <objects>
+                <viewController title="Медиа" id="Mov-cG-rtf" customClass="MediaViewController" customModule="Apple_music_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wRw-qL-NZM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pYe-O7-kde"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Медиа" image="music.pages" catalog="system" id="Zia-Jh-woz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NWm-L3-YXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="40"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="7k4-4k-Xjv">
+            <objects>
+                <viewController title="Главная" id="ald-VF-kt6" customClass="MainViewController" customModule="Apple_music_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Mi-c1-Yed">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="I7M-qn-HFe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="house" catalog="system" id="BtW-vx-d9n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wt7-cm-BrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="802"/>
+        </scene>
+        <!--Main Tap Bar Controller-->
+        <scene sceneID="h2B-c1-srN">
+            <objects>
+                <tabBarController id="11f-UZ-VHo" customClass="MainTapBarController" customModule="Apple_music_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W3e-Tj-CRq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ald-VF-kt6" kind="relationship" relationship="viewControllers" id="ELS-10-4KN"/>
+                        <segue destination="Mov-cG-rtf" kind="relationship" relationship="viewControllers" id="tPW-u8-bux"/>
+                        <segue destination="HKE-wU-uL5" kind="relationship" relationship="viewControllers" id="KXI-0n-HUb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C4h-ar-ecP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1879" y="537"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="snw-ur-QsK">
+            <objects>
+                <viewController title="Профиль" id="HKE-wU-uL5" customClass="ProfileViewController" customModule="Apple_music_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P00-sf-LCW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="As2-nT-MJj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" id="gJB-eS-m2B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQt-9a-n7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="1516"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="music.pages" catalog="system" width="107" height="128"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
